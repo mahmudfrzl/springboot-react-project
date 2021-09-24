@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     private static final Logger log = LoggerFactory.getLogger(UserController.class);
 
+    private final UserRepository userRepository;
+
     @PostMapping("/1.0/users")
-    public void createUser(@RequestBody String body){
-        log.info(body);
+    public void createUser(@RequestBody User user){
+        userRepository.save(user);
     }
 }
