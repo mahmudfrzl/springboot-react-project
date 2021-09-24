@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import { UserSignupPage } from './UserSıgnupPage';
+import { UserSignupPage } from './pages/UserSıgnupPage';
 
 function App() {
   return (
