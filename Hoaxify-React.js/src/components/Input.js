@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = (props) => {
+const   Input = (props) => {
     const {label,name,error,onChange,type} = props
     const className= error ? "form-control is-invalid" : "form-control"
   return (

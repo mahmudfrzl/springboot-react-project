@@ -11,3 +11,4 @@ export const login = (creds) => {
 export const changeLanguage = (language) => {
   axios.defaults.headers["accept-language"] = language;
 };
+ 
